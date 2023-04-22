@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using System.Web;
 using Backend_api.Models;
@@ -17,6 +18,8 @@ namespace Backend_api.Controllers
     [ApiController]
     public class ControladorAPIController : ControllerBase
     {
+
+
         
         [HttpGet]
         [Route("api/v1/emisores")]
@@ -63,6 +66,48 @@ namespace Backend_api.Controllers
 
 
         }
+
+        [HttpGet]
+        [Route("api/v1/centrocostos")]
+        public async Task<ActionResult<List<CentroCostos>>> GetCentroCostosAsync()
+        {
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync("http://apiservicios.ecuasolmovsa.com:3009/api/Varios/CentroCostosSelect");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                var centroCostos = JsonConvert.DeserializeObject<List<CentroCostos>>(json);
+                return centroCostos;
+            }
+            else
+            {
+                return StatusCode((int)response.StatusCode, response.ReasonPhrase);
+            }
+        }
+
+        [HttpGet]
+        [Route("CentroCostosInsert")]
+        public async Task<ActionResult> AgregarCentroCostoAsync(int codigoCentroCostos, string descripcionCentroCostos)
+        {
+            Console.WriteLine("El valor de codigoCentroCostos es: " + codigoCentroCostos);
+
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/CentroCostosInsert?codigocentrocostos={codigoCentroCostos}&descripcioncentrocostos={descripcionCentroCostos}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+
+
     }
-    
+
 }
