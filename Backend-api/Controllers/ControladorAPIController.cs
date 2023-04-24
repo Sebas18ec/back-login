@@ -106,8 +106,66 @@ namespace Backend_api.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("api/centrocostos/delete")]
+        public async Task<ActionResult> DeleteCentroCostosAsync(int codigoCentroCostos, string descripcionCentroCostos)
+        {
+            Console.WriteLine("El valor de codigoCentroCostos es: " + codigoCentroCostos);
+
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/CentroCostosDelete?codigocentrocostos={codigoCentroCostos}&descripcioncentrocostos={descripcionCentroCostos}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("api/centrocostos/search")]
+        public async Task<ActionResult> SearchCentroCostosAsync(string descripcionCentroCostos)
+        {
+            Console.WriteLine("El valor de descripcion es: " + descripcionCentroCostos);
+
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/CentroCostosSearch?descripcioncentrocostos={descripcionCentroCostos}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
 
 
+        [HttpGet]
+        [Route("CentroCostosEdit")]
+        public async Task<ActionResult> EditarCentroCostoAsync(int codigoCentroCostos, string descripcionCentroCostos)
+        {
+            Console.WriteLine("El valor de codigoCentroCostos es: " + codigoCentroCostos);
+
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/CentroCostosUpdate?codigocentrocostos={codigoCentroCostos}&descripcioncentrocostos={descripcionCentroCostos}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
     }
 
 }
