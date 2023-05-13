@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sebastianbelalcazar/Projects/Backend-api/pruebas/pruebas.csproj": {}
+    "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj": {}
   },
   "projects": {
-    "/Users/sebastianbelalcazar/Projects/Backend-api/Backend-api/Backend-api.csproj": {
+    "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sebastianbelalcazar/Projects/Backend-api/Backend-api/Backend-api.csproj",
+        "projectUniqueName": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
         "projectName": "Backend-api",
-        "projectPath": "/Users/sebastianbelalcazar/Projects/Backend-api/Backend-api/Backend-api.csproj",
-        "packagesPath": "/Users/sebastianbelalcazar/.nuget/packages/",
-        "outputPath": "/Users/sebastianbelalcazar/Projects/Backend-api/Backend-api/obj/",
+        "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
+        "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
+        "outputPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sebastianbelalcazar/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -106,34 +108,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/sebastianbelalcazar/Projects/Backend-api/pruebas/pruebas.csproj": {
+    "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sebastianbelalcazar/Projects/Backend-api/pruebas/pruebas.csproj",
+        "projectUniqueName": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj",
         "projectName": "pruebas",
-        "projectPath": "/Users/sebastianbelalcazar/Projects/Backend-api/pruebas/pruebas.csproj",
-        "packagesPath": "/Users/sebastianbelalcazar/.nuget/packages/",
-        "outputPath": "/Users/sebastianbelalcazar/Projects/Backend-api/pruebas/obj/",
+        "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj",
+        "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
+        "outputPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sebastianbelalcazar/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/sebastianbelalcazar/Projects/Backend-api/Backend-api/Backend-api.csproj": {
-                "projectPath": "/Users/sebastianbelalcazar/Projects/Backend-api/Backend-api/Backend-api.csproj"
+              "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj": {
+                "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj"
               }
             }
           }
@@ -193,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

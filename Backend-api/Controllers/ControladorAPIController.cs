@@ -62,9 +62,6 @@ namespace Backend_api.Controllers
             {
                 return BadRequest();
             }
-
-
-
         }
 
         [HttpGet]
@@ -166,6 +163,201 @@ namespace Backend_api.Controllers
                 return BadRequest();
             }
         }
-    }
 
+        [HttpGet]
+        [Route("api/GetMovimientosPlanilla")]
+        public async Task<ActionResult<string>> GetMovimientosPlanillaAsync()
+        {
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync("http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimientoPlanillaSelect");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Content(content, "application/json");
+            }
+            else
+            {
+                return StatusCode((int)response.StatusCode, response.ReasonPhrase);
+            }
+        }
+
+        [HttpGet("loginAutorizador")]
+        public async Task<ActionResult> Login(string usuario, string password)
+        {
+            _httpClient.BaseAddress = new Uri("http://apiservicios.ecuasolmovsa.com:3009");
+
+            var response = await _httpClient.GetAsync($"/api/Varios/GetAutorizador?usuario={usuario}&password={password}");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("MovimientoPlanillaInsert")]
+        public async Task<ActionResult> InsertarMovimientoPlanillaAsync(string conceptos, int prioridad, string tipooperacion, int cuenta1, int cuenta2, int cuenta3, int cuenta4, string MovimientoExcepcion1, string MovimientoExcepcion2, string MovimientoExcepcion3, int Traba_Aplica_iess, int Traba_Proyecto_imp_renta, int Aplica_Proy_Renta, int Empresa_Afecta_Iess)
+        {
+            Console.WriteLine("El valor de conceptos es: " + conceptos);
+
+            var httpClient = new HttpClient();
+            var url = $"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimientoPlanillaInsert?conceptos={conceptos}&prioridad={prioridad}&tipooperacion={tipooperacion}&cuenta1={cuenta1}&cuenta2={cuenta2}&cuenta3={cuenta3}&cuenta4={cuenta4}&MovimientoExcepcion1={MovimientoExcepcion1}&MovimientoExcepcion2={MovimientoExcepcion2}&MovimientoExcepcion3={MovimientoExcepcion3}&Traba_Aplica_iess={Traba_Aplica_iess}&Traba_Proyecto_imp_renta={Traba_Proyecto_imp_renta}&Aplica_Proy_Renta={Aplica_Proy_Renta}&Empresa_Afecta_Iess={Empresa_Afecta_Iess}";
+
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("ObtenerMovimientosExcepcion1y2")]
+        public async Task<ActionResult> ObtenerMovimientosExcepcionAsync()
+        {
+            var httpClient = new HttpClient();
+            var url = "http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimientosExcepcion1y2";
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("ObtenerMovimientosExcepcion3")]
+        public async Task<ActionResult> ObtenerMovimientosExcepcion3Async()
+        {
+            var httpClient = new HttpClient();
+            var url = "http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimientosExcepcion3";
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("GetTipoOperacion")]
+        public async Task<ActionResult> GetTipoOperacionAsync()
+        {
+            var httpClient = new HttpClient();
+            var url = "http://apiservicios.ecuasolmovsa.com:3009/api/Varios/TipoOperacion";
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("GetTrabaAfectaIESS")]
+        public async Task<ActionResult> GetTrabaAfectaIessAsync()
+        {
+            var httpClient = new HttpClient();
+            var url = "http://apiservicios.ecuasolmovsa.com:3009/api/Varios/TrabaAfectaIESS";
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("GetTrabAfecImpuestoRenta")]
+        public async Task<ActionResult> GetTrabAfecImpuestoRentaAsync()
+        {
+            var httpClient = new HttpClient();
+            var url = "http://apiservicios.ecuasolmovsa.com:3009/api/Varios/TrabAfecImpuestoRenta";
+            var response = await httpClient.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+
+        [HttpGet]
+        [Route("api/movimientoPlanilla/delete")]
+        public async Task<ActionResult> DeleteMovimientoPlanillaAsync(int codigomovimiento, string descripcionomovimiento)
+        {
+            Console.WriteLine("El valor de codigo es: " + codigomovimiento);
+
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimeintoPlanillaDelete?codigomovimiento={codigomovimiento}&descripcionomovimiento={descripcionomovimiento}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("api/movimientoPlanilla/search")]
+        public async Task<ActionResult> SearchMovimientoPlanillasAsync(string concepto)
+        {
+            Console.WriteLine("El valor de descripcion es: " + concepto);
+
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimientoPlanillaSearch?Concepto={concepto}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+
+
+    }
 }
