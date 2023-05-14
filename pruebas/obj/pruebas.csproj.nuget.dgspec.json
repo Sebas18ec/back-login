@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj": {}
+    "C:\\Users\\gteran\\source\\repos\\back-login\\pruebas\\pruebas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj": {
+    "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj",
+        "projectUniqueName": "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj",
         "projectName": "Backend-api",
-        "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj",
+        "projectPath": "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj",
         "packagesPath": "C:\\Users\\gteran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\obj\\",
+        "outputPath": "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gteran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -112,12 +112,12 @@
         }
       }
     },
-    "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj": {
+    "C:\\Users\\gteran\\source\\repos\\back-login\\pruebas\\pruebas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj",
+        "projectUniqueName": "C:\\Users\\gteran\\source\\repos\\back-login\\pruebas\\pruebas.csproj",
         "projectName": "pruebas",
-        "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj",
+        "projectPath": "C:\\Users\\gteran\\source\\repos\\back-login\\pruebas\\pruebas.csproj",
         "packagesPath": "C:\\Users\\gteran\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\obj\\",
         "projectStyle": "PackageReference",
@@ -136,8 +136,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj": {
-                "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj"
+              "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj": {
+                "projectPath": "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj"
               }
             }
           }

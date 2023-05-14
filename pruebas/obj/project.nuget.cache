@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OTvozWkQ22dusCPXpEdLdEwc0AYR9Arm8e7NZygbkW4rcrKI5aNfnaHSr675tndKzco7EXoDe4pLV8YJMqaKXw==",
+  "dgSpecHash": "FNBenXj8YqaLuYKhIsv8KudRALbNjY9jw655RtPYFsfCQDczMlm+AjuzoxUBDcs/oG+RQHy2ytXxtkJR7/CjNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj",
+  "projectFilePath": "C:\\Users\\gteran\\source\\repos\\back-login\\pruebas\\pruebas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gteran\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\gteran\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

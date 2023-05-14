@@ -11332,9 +11332,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj",
+      "projectUniqueName": "C:\\Users\\gteran\\source\\repos\\back-login\\pruebas\\pruebas.csproj",
       "projectName": "pruebas",
-      "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj",
+      "projectPath": "C:\\Users\\gteran\\source\\repos\\back-login\\pruebas\\pruebas.csproj",
       "packagesPath": "C:\\Users\\gteran\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\obj\\",
       "projectStyle": "PackageReference",
@@ -11353,8 +11353,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj": {
-              "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj"
+            "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj": {
+              "projectPath": "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj"
             }
           }
         }

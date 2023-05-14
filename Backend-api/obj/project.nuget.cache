@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "STnyGK8CwS3s6/wzCwvfaEaGHvwlg36g4IwdbUGD1K+Xqo6QAga6VN+yEJB+aBVvdRcnXzPcN1x0VI5uIO9K1g==",
+  "dgSpecHash": "KPPDUoAsR8ebcmSnTX7IMdSRc64ESLKfVFiaEJJkotoqSoRuJ8ScqW1sns1rlDbokK1AsVq9s7Ssr6jRGjG/5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj",
+  "projectFilePath": "C:\\Users\\gteran\\source\\repos\\back-login\\Backend-api\\Backend-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gteran\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\gteran\\.nuget\\packages\\microsoft.aspnet.cors\\5.2.9\\microsoft.aspnet.cors.5.2.9.nupkg.sha512",
