@@ -52,17 +52,32 @@ namespace Backend_api.Controllers
         {
             _httpClient.BaseAddress = new Uri("http://apiservicios.ecuasolmovsa.com:3009");
 
+            // Verificar la longitud del usuario y la contraseña  
+            if (login.usuario.Length != 4 || login.contrasena.Length != 5)
+            {
+                return BadRequest("Usuario o contraseña inválidos");
+            }
+
             var response = await _httpClient.GetAsync($"/api/Usuarios?usuario={login.usuario}&password={login.contrasena}");
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                return Ok(content);
+                if (content.Contains("INGRESO EXITOSO"))
+                {
+                    return Ok(content);
+                }
+                else
+                {
+                    return BadRequest();
+                }
             }
             else
             {
                 return BadRequest();
             }
         }
+
+
 
         [HttpGet]
         [Route("api/v1/centrocostos")]
@@ -191,7 +206,14 @@ namespace Backend_api.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                return Ok(content);
+                if (content.Contains("INGRESO EXITOSO"))
+                {
+                    return Ok(content);
+                }
+                else
+                {
+                    return BadRequest();
+                }
             }
             else
             {

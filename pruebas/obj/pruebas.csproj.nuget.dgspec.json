@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj": {}
+    "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj": {}
   },
   "projects": {
-    "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj": {
+    "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
+        "projectUniqueName": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj",
         "projectName": "Backend-api",
-        "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
-        "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
-        "outputPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\obj\\",
+        "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj",
+        "packagesPath": "C:\\Users\\gteran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gteran\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -112,17 +112,17 @@
         }
       }
     },
-    "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj": {
+    "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj",
+        "projectUniqueName": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj",
         "projectName": "pruebas",
-        "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj",
-        "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
-        "outputPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\obj\\",
+        "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\pruebas.csproj",
+        "packagesPath": "C:\\Users\\gteran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\pruebas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gteran\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,8 +136,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj": {
-                "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj"
+              "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj": {
+                "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj"
               }
             }
           }

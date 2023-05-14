@@ -11380,19 +11380,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\piero\\.nuget\\packages\\": {}
+    "C:\\Users\\gteran\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
+      "projectUniqueName": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj",
       "projectName": "Backend-api",
-      "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
-      "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
-      "outputPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\obj\\",
+      "projectPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\Backend-api.csproj",
+      "packagesPath": "C:\\Users\\gteran\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gteran\\Source\\Repos\\back-login\\Backend-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gteran\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
