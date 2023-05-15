@@ -11385,11 +11385,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
+      "projectUniqueName": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\Backend-api\\Backend-api.csproj",
       "projectName": "Backend-api",
-      "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
+      "projectPath": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\Backend-api\\Backend-api.csproj",
       "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
-      "outputPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\obj\\",
+      "outputPath": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\Backend-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",

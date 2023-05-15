@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wHZPO0g3jOUzzWHXTP65JPvfKVm1dO69h/B27aUfffLWU/paFLaew/oZLem8hlWGy7hP8Ta+WHwskYyoZ4WIVw==",
+  "dgSpecHash": "tN3emjnAFghh/mTCShpxBO/Bsm6aB+ediY33aMq1kDDKnGC4yhJc0Z4AQ1jXeZ430pEh63SC9c1ZSckUcYww7w==",
   "success": true,
-  "projectFilePath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj",
+  "projectFilePath": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\pruebas\\pruebas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piero\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\piero\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

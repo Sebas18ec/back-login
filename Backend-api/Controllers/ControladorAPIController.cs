@@ -73,9 +73,8 @@ namespace Backend_api.Controllers
 
             if (response.IsSuccessStatusCode)
             {
-                var json = await response.Content.ReadAsStringAsync();
-                var centroCostos = JsonConvert.DeserializeObject<List<CentroCostos>>(json);
-                return centroCostos;
+                var content = await response.Content.ReadAsStringAsync();
+                return Content(content, "application/json");
             }
             else
             {
@@ -325,6 +324,26 @@ namespace Backend_api.Controllers
 
             var httpClient = new HttpClient();
             var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimeintoPlanillaDelete?codigomovimiento={codigomovimiento}&descripcionomovimiento={descripcionomovimiento}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                return Ok(content);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpGet]
+        [Route("api/movimientoPlanilla/edit")]
+        public async Task<ActionResult> EditarMovimientoPlanillaAsync(int codigoplanilla, string conceptos, int prioridad, string tipooperacion, int cuenta1, int cuenta2, int cuenta3, int cuenta4, string MovimientoExcepcion1, string MovimientoExcepcion2, string MovimientoExcepcion3, int Traba_Aplica_iess, int Traba_Proyecto_imp_renta, int Aplica_Proy_Renta, int Empresa_Afecta_Iess)
+        {
+            Console.WriteLine("El valor de codigoMovimientoPlanilla es: " + codigoplanilla);
+
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync($"http://apiservicios.ecuasolmovsa.com:3009/api/Varios/MovimientoPlanillaUpdate?codigoplanilla={codigoplanilla}&conceptos={conceptos}&prioridad={prioridad}&tipooperacion={tipooperacion}&cuenta1={cuenta1}&cuenta2={cuenta2}&cuenta3={cuenta3}&cuenta4={cuenta4}&MovimientoExcepcion1={MovimientoExcepcion1}&MovimientoExcepcion2={MovimientoExcepcion2}&MovimientoExcepcion3={MovimientoExcepcion3}&Traba_Aplica_iess={Traba_Aplica_iess}&Traba_Proyecto_imp_renta={Traba_Proyecto_imp_renta}&Aplica_Proy_Renta={Aplica_Proy_Renta}&Empresa_Afecta_Iess={Empresa_Afecta_Iess}");
 
             if (response.IsSuccessStatusCode)
             {

@@ -11332,11 +11332,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj",
+      "projectUniqueName": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\pruebas\\pruebas.csproj",
       "projectName": "pruebas",
-      "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\pruebas.csproj",
+      "projectPath": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\pruebas\\pruebas.csproj",
       "packagesPath": "C:\\Users\\piero\\.nuget\\packages\\",
-      "outputPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\pruebas\\obj\\",
+      "outputPath": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\pruebas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\piero\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11353,8 +11353,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj": {
-              "projectPath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj"
+            "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\Backend-api\\Backend-api.csproj": {
+              "projectPath": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\Backend-api\\Backend-api.csproj"
             }
           }
         }

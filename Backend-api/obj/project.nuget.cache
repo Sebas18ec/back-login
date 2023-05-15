@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GOaHmIT79RG0RQ6GK38nB5Jj/Bi7PUMC9l1y6gp2y6+eWjFuMLQtlD/7XkSX4iucmu78o/jrkNYZoBb02gxmKg==",
+  "dgSpecHash": "lrcbnRec5jbqbaGJMXX4Rs5JiKvrlNN4LcA94IPyKBsxyilQ/m1CZWEbN96Im/J6W4xhY1VJTbVPaBEyhNXtyA==",
   "success": true,
-  "projectFilePath": "E:\\Udla\\Octavo Semestre\\Validación y verificación del software\\proyectos\\back-login-main\\Backend-api\\Backend-api.csproj",
+  "projectFilePath": "C:\\Users\\piero\\Desktop\\avance 3 validacion y verificacion\\back-login\\Backend-api\\Backend-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\piero\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\piero\\.nuget\\packages\\microsoft.aspnet.cors\\5.2.9\\microsoft.aspnet.cors.5.2.9.nupkg.sha512",
